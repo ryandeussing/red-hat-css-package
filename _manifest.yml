@@ -1,0 +1,7 @@
+author: Ryan Deussing
+description: espanso matches for Red Hat CCS
+name: ccs-package
+title: Red Hat CCS Package
+version: 1.0.0
+homepage: "https://github.com/ryandeussing/red-hat-css-package"
+tags: ["git"]
