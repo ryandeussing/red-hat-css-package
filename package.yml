@@ -2,31 +2,31 @@
 # Original file: default.yml
 
 matches:  
-  - trigger: "zsh:"
+  - trigger: ":zsh"
     replace: code ~/.zshrc
 
-  - trigger: "git-local:"
+  - trigger: ":git-local"
     replace: code .git/config
 
-  - trigger: "d-local:"
+  - trigger: ":d-local"
     replace: "git branch -d "
 
-  - trigger: "d-remote:"
+  - trigger: ":d-remote"
     replace: "git push origin --delete "
 
-  - trigger: "amend:"
+  - trigger: ":amend"
     replace: git commit --amend
 
-  - trigger: "log:"
+  - trigger: ":log"
     replace: git log --all --decorate --oneline --graph
 
-  - trigger: "add:"
+  - trigger: ":add"
     replace: git add -A
     
-  - trigger: "branches:"
+  - trigger: ":branches"
     replace: "git branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate"
 
-  - trigger: "message:"
+  - trigger: ":message"
     replace: |
       Commit subject line
       
@@ -42,7 +42,7 @@ matches:
       Removed
       - n/a
 
-  - trigger: "date:"
+  - trigger: ":date"
     replace: "{{mydate}}"
     vars:
       - name: mydate
