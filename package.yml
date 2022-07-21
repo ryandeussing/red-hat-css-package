@@ -26,10 +26,13 @@ matches:
   - trigger: ":add"
     replace: git add -A
     
+  - trigger: ":pull"
+    replace: git pull
+
   - trigger: ":branches"
     replace: "git branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate"
 
-  - trigger: ":message"
+  - trigger: ":commit"
     replace: |
       Commit subject line
       
