@@ -17,6 +17,9 @@ matches:
   - trigger: ":amend"
     replace: git commit --amend
 
+  - trigger: ":status"
+    replace: "git status"
+
   - trigger: ":gce"
     replace: git commit --allow-empty -m 'empty initial commit'
 
