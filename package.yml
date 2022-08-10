@@ -24,7 +24,7 @@ matches:
     replace: git commit --allow-empty -m 'empty initial commit'
 
   - trigger: ":log"
-    replace: git log --all --decorate --oneline --graph
+    replace: git log --oneline
 
   - trigger: ":add"
     replace: git add -A
