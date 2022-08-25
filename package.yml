@@ -10,6 +10,7 @@ matches:
 
   - trigger: ":d-local"
     replace: "git branch -d "
+    right_word: true
 
   - trigger: ":d-remote"
     replace: "git push origin --delete "
