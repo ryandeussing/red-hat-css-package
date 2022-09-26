@@ -39,6 +39,9 @@ matches:
   - trigger: ":commit"
     replace: |
       Commit subject line
+
+      Titles to re/publish upon merge
+      - n/a
       
       Added
       - n/a
